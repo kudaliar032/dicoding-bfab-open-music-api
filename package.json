@@ -4,6 +4,7 @@
   "description": "OpenMusic API",
   "main": "index.js",
   "scripts": {
+    "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js",
     "lint": "eslint ./src",
     "migrate": "node-pg-migrate"
@@ -13,10 +14,12 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^20.1.4",
+    "@hapi/jwt": "^2.0.1",
+    "bcrypt": "^5.0.1",
     "dotenv": "^10.0.0",
     "joi": "^17.4.0",
     "nanoid": "^3.1.23",
-    "node-pg-migrate": "^5.9.0",
+    "node-pg-migrate": "^5.10.0",
     "pg": "^8.6.0"
   },
   "devDependencies": {
